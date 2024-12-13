@@ -1,3 +1,7 @@
+echo "---------- INSTALLING Less ----------"
+sudo yum install less  -y
+
+
 echo "---------- INSTALLING NANO ----------"
 sudo yum install nano -y
 
