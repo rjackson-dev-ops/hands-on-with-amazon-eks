@@ -1,3 +1,11 @@
+echo "---------- INSTALLING ranger ----------"
+git clone https://github.com/hut/ranger.git
+cd ranger
+sudo make install
+cd ..
+
+ranger --version
+
 echo "---------- INSTALLING Less ----------"
 sudo yum install less  -y
 
@@ -14,3 +22,5 @@ eksctl version
 echo "---------- INSTALLING HELM ----------"
 export VERIFY_CHECKSUM=false
 curl https://raw.githubusercontent.com/helm/helm/master/scripts/get-helm-3 | bash
+
+set -o vi
